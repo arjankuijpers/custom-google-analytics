@@ -39,7 +39,7 @@ CustomAnalytics.prototype = {
             "&cid="+this.cid +
             "&t="+hitType +
 			"&ul="+this.ul +
-			"&cm[1][0]*=" + this.osInfo +
+			"&cm[1][0]*=" + this.osInfo + // Custom metric, you can specify it with what you want.
             "&"+aditionalParams;
         
         
