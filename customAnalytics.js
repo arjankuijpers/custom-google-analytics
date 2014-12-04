@@ -64,3 +64,35 @@ CustomAnalytics.prototype = {
 		this.osInfo = osString;
 	},
 }
+
+
+(function() {
+    console.log("try to overwrite distlib");
+
+    if((typeof CocoonJS === "undefined")) {
+        console.error("Distlib not yet loaded, this needs to be loaded after distlib");
+        return false;
+    }
+
+    DistLib.GoogleAnalytics.prototype.initialize = function() {
+        var trackingId = this._trackingId;
+        var clientId = CC.getClientId();
+        var osInfo = navigator.platform;
+        var language = navigator.language;
+
+        this.ca = new CustomAnalytics(trackingId, clientId, osInfo, language);
+    }
+
+    DistLib.GoogleAnalytics.prototype.setDimension = function(fieldName, value) {
+        this.ca.setDimension(fieldName, value);
+    }
+
+    DistLib.GoogleAnalytics.prototype.sendPageView = function(page) {
+        this.ca.sendPageView(page);
+    }
+
+    DistLib.GoogleAnalytics.prototype.sendEvent = function(category,action,label,value) {
+        this.ca.sendEvent(category,action,label,value);
+    }
+
+}());
