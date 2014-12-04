@@ -23,7 +23,7 @@ CustomAnalytics.prototype = {
     },
     
     sendPageView:function(page){
-        var params = "dh=powermahjongdeluxe.app&dp=" + page + "&dt="+page;
+        var params = "dh=CustomAnalytics.app&dp=" + page + "&dt="+page;
         this._postToService("pageview", params, null);
     },
     
