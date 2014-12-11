@@ -53,7 +53,7 @@ CustomAnalytics.prototype = {
             console.log("trackingPixel onerror" );
         }
         trackingPixel.src = this.AnalyticsURL + "?" + params;
-        console.log(trackingPixel.src);
+        //console.log(trackingPixel.src);
     },
 	
 	_getLanguage: function() {
