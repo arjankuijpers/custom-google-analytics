@@ -66,7 +66,7 @@ CustomAnalytics.prototype = {
   setupOS: function(osString) {
     this.osInfo = osString;
   },
-}
+};
 
 
 
@@ -100,4 +100,4 @@ CustomAnalytics.prototype = {
     this.ca.sendEvent(category,action,label,value);
   }
 
-}());
+})();
