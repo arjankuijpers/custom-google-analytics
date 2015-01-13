@@ -65,4 +65,4 @@ CustomAnalytics.prototype = {
   setupOS: function(osString) {
     this.osInfo = osString;
   },
-}
+};
