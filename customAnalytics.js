@@ -49,28 +49,34 @@ CustomAnalytics.prototype = {
     var trackingPixel = new Image();
     trackingPixel.onload = function()
     {
-      console.log("trackingPixel onload" );
+
+      console.log("trackingPixel: post success." );
     }
     trackingPixel.onerror = function()
     {
-      console.log("trackingPixel onerror" );
+
+      console.log("trackingPixel: post failed (offline ?)." );
     }
+
     trackingPixel.src = this.AnalyticsURL + "?" + params;
     //console.log(trackingPixel.src);
   },
 
   _getLanguage: function() {
+
     return navigator.language ? navigator.language : null;
   },
 
   setupOS: function(osString) {
+
     this.osInfo = osString;
   },
 };
 
 
 
-//overwrite the distlib functions.
+
+// overwrite the distlib functions.
 (function() {
   console.log("try to overwrite distlib");
 
