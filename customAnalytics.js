@@ -59,7 +59,7 @@ CustomAnalytics.prototype = {
     "&ul="+this.ul +
     "&z="+randomCB +
     "&sr="+this.screenRes +
-    "&ds" + this.osInfo + // osInfo, should define Android or IOS.
+    "&ds=" + this.osInfo + // osInfo, should define Android or IOS.
     "&"+aditionalParams;
 
 
@@ -125,7 +125,7 @@ CustomAnalytics.prototype = {
   }
 
   DistLib.GoogleAnalytics.prototype.sendEvent = function(category,action,label,value) {
-    
+
     this.ca.sendEvent(category,action,label,value);
   }
 
