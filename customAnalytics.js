@@ -1,9 +1,16 @@
 /**
 * @author Arjan Kuijpers <arjankuijpers@live.nl>
+* @version 0.0.1.0
 */
 
 //Distlib branch!
-
+/*
+*  custom API for google-analytics service.
+* @param {int} trackingId The tracking ID to post to.
+* @param {int} clientId ID to keep the device apart from eachother.
+* @param osInfo String that should be set to the OS that is currently running.
+* @param language language that the device is set.
+*/
 CustomAnalytics = function(trackingId, clientId, osInfo, language)
 {
   this.trackingID = trackingId;
@@ -12,14 +19,21 @@ CustomAnalytics = function(trackingId, clientId, osInfo, language)
   this.cid = clientId || 0;
   this.ul = language || this._getLanguage();
   this.osInfo = osInfo || "null";
+  this.screenRes = null;
 
   this.initialize();
 }
 
 CustomAnalytics.prototype = {
+
+  /*
+  * initializes the customAnalytics object.
+  */
   initialize: function(){
     //init the Analytics
+
     console.log("CA: initialize Custom Analytics");
+    this.screenRes = window.screen.width + "x" + window.screen.height;
   },
 
   setDimension: function(fieldName, value){
@@ -37,12 +51,15 @@ CustomAnalytics.prototype = {
   },
 
   _postToService: function(hitType, aditionalParams, callback) {
+    var randomCB = Math.round(Math.random() * 10000);
     var params = "v="+this.measurementVersion +
     "&tid="+ this.trackingID +
     "&cid="+this.cid +
     "&t="+hitType +
     "&ul="+this.ul +
-    "&cm[1][0]*=" + this.osInfo + // Custom metric, you can specify it with what you want.
+    "&z="+randomCB +
+    "&sr="+this.screenRes +
+    "&ds" + this.osInfo + // osInfo, should define Android or IOS.
     "&"+aditionalParams;
 
 
@@ -67,8 +84,11 @@ CustomAnalytics.prototype = {
     return navigator.language ? navigator.language : null;
   },
 
+  /*
+  * Should set the OS the game is currently running on.
+  * @param {string} osString String that should be set to the OS that is currently running.
+  */
   setupOS: function(osString) {
-
     this.osInfo = osString;
   },
 };
