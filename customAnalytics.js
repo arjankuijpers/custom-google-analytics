@@ -115,14 +115,17 @@ CustomAnalytics.prototype = {
   }
 
   DistLib.GoogleAnalytics.prototype.setDimension = function(fieldName, value) {
+
     this.ca.setDimension(fieldName, value);
   }
 
   DistLib.GoogleAnalytics.prototype.sendPageView = function(page) {
+
     this.ca.sendPageView(page);
   }
 
   DistLib.GoogleAnalytics.prototype.sendEvent = function(category,action,label,value) {
+    
     this.ca.sendEvent(category,action,label,value);
   }
 
