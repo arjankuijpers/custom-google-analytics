@@ -58,7 +58,7 @@ CustomAnalytics.prototype = {
     "&ul="+this.ul +
     "&z="+randomCB +
     "&sr="+this.screenRes +
-    "&ds" + this.osInfo + // osInfo, should define Android or IOS.
+    "&ds=" + this.osInfo + // osInfo, should define Android or IOS.
     "&"+aditionalParams;
 
 
