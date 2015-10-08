@@ -32,6 +32,8 @@ CustomAnalytics.prototype = {
 
     /**
     * Send Dimensions to Google Analytics, currently not implemented
+    * @param {string} fieldName Key to send to analytics service (example: user_agent_string).
+    * @param {string} value Value to send to analytics service.
     */
     setDimension: function(fieldName, value){
         console.log("CA: setDimension not implemented");
@@ -39,6 +41,7 @@ CustomAnalytics.prototype = {
 
     /**
     * Send a page view to Google Analytics
+    * @param {string} page Page name to send to analytics service.
     */
     sendPageView:function(page){
         var params = "dh=CustomAnalytics.app&dp=" + page + "&dt="+page;
@@ -47,6 +50,8 @@ CustomAnalytics.prototype = {
 
     /**
     * Send a event to Google Analytics
+    * @param {string} category The category the event belongs to.
+    * @param {string} action What action the event belongs to.
     */
     sendEvent: function(category, action, label, value){
         var params = "ec="+category+"&ea="+action+"&el="+label+"&ev="+value;
