@@ -47,7 +47,7 @@ Custom API for google analytics using POST & Measurement Protocol.
 2. use the production versions of files inside the dist folder.
 3. be happy!.
 
-CustomAnalytics is easy to use. But just in case you need it, [API documentation](https://raw.githubusercontent.com/arjankuijpers/cocoonJS-Google-analytics/master/docs/api/index.html).
+CustomAnalytics is easy to use. But just in case you need it, [API documentation](https://arjankuijpers.github.io/cocoonJS-Google-analytics/docs/api/index.html).
 
 ## Tips
 
