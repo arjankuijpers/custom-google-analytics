@@ -51,7 +51,7 @@ CustomAnalytics is easy to use. But just in case you need it, [API documentation
 
 ## Tips
 
-* **Not yet specified,** not yet specified.
+* **When making changes to the Library,** please run jsdoc and use your local version of JSDoc.
 
 
 ## About CocoonJS/Custom Google Analytics
