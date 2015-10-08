@@ -24,10 +24,10 @@ Custom API for google analytics using POST & Measurement Protocol.
 </table>
 
 * [Getting Started & Installation](#getting-started)
-* [Performance & Benchmarks](#performance)
+* [Performance & Benchmarks]
 * [Tips](#tips)
-* [FAQ](https://www.ublock.org/faq/)
-* [About](#about-ublock)
+* [FAQ]
+* [About](#about)
 
 ## Getting started
 
