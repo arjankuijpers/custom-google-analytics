@@ -63,10 +63,15 @@ CustomAnalytics.prototype = {
     * @private
     */
     _postToService: function(hitType, aditionalParams, callback){
+
+        // Create a random variable string, to prevent caching by the browser.
+        var randomCB = Math.round(Math.random() * 10000);
+
         var params = "v="+this.measurementVersion+
             "&tid="+ this.trackingID+
             "&cid="+this.cid+
             "&t="+hitType+
+            "&z="+randomCB+
             "&"+aditionalParams;
 
 
