@@ -13,6 +13,14 @@
   "name": "cocoonjs-google-analytics",
   "description": "cocoonJS-Google-analytics\r =========================",
   "version": "1.0.0",
+  "author": "Arjan Kuijpers",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "homepage": "https://bitbucket.org/arjankuijpers/customanalytics#readme",
   "main": "customAnalytics.js",
   "directories": {
     "doc": "docs"
@@ -40,8 +48,5 @@
     "ludei",
     "js",
     "javascript"
-  ],
-  "author": "Arjan Kuijpers",
-  "license": "MIT",
-  "homepage": "https://bitbucket.org/arjankuijpers/customanalytics#readme"
+  ]
 }
