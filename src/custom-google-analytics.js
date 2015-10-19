@@ -19,6 +19,7 @@ var CustomAnalytics = function(trackingId, clientId, proxy)
     this.AnalyticsURL = "https://google-analytics.com/collect";
     this.measurementVersion = 1;
     this.cid = clientId || 0;
+    this.proxy = proxy || false;
 
     this.initialize();
 };
@@ -30,6 +31,7 @@ CustomAnalytics.prototype = {
     initialize: function(){
         //init the Analytics
         console.log("CA: initialize Custom Analytics");
+        console.log("CA: Proxy enabled: " + this.proxy);
     },
 
     /**
