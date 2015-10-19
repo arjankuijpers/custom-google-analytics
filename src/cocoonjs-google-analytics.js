@@ -8,11 +8,11 @@
 /**
 * Custom Analytics object, initialize this object.
 * @constructor
-* @param {boolean} proxy If it should use the proxy service, this is usefull to escape from adblockers.
 * @param {int} trackingId The tracking ID to post to (received from google-analytics).
 * @param {int} clientId ID to keep the devices apart from eachother.
+* @param {boolean} proxy If it should use the proxy service, this is usefull to escape from adblockers.
 */
-var CustomAnalytics = function(proxy, trackingId, clientId)
+var CustomAnalytics = function(trackingId, clientId, proxy)
 {
     this.trackingID = trackingId;
     this.proxyURL = "https://custom-g-ana-proxy.herokuapp.com"; // Specify here your proxy adress, if you use your own instance.
