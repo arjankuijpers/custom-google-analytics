@@ -80,5 +80,6 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'nodeunit', 'concat', 'uglify']);
+  grunt.registerTask('nojshint', ['nodeunit', 'concat', 'uglify']);
 
 };
