@@ -1,6 +1,8 @@
 cocoonJS-Google-analytics
 =========================
 
+[![Join the chat at https://gitter.im/arjankuijpers/custom-google-analytics](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/arjankuijpers/custom-google-analytics?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Custom API for google analytics using POST & Measurement Protocol.
 
 
