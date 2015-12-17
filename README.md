@@ -1,16 +1,18 @@
-cocoonJS-Google-analytics
+custom-Google-analytics
 =========================
 
 [![Join the chat at https://gitter.im/arjankuijpers/custom-google-analytics](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/arjankuijpers/custom-google-analytics?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+https://img.shields.io/badge/license-MIT-blue.svg
 Custom API for google analytics using POST & Measurement Protocol.
 
 
 <table width="100%">
       <tr>
       <td align="left" width="70">
-            <a href = "https://github.com/arjankuijpers/cocoonJS-Google-analytics/">
-            <img  src="https://raw.githubusercontent.com/arjankuijpers/cocoonJS-Google-analytics/master/docs/img/analytics-logo.png"
+            <a href = "https://github.com/arjankuijpers/custom-Google-analytics/">
+            <img  src="https://raw.githubusercontent.com/arjankuijpers/custom-Google-analytics/master/docs/img/analytics-logo.png"
                   height="64">
             </a>
       </td>
@@ -20,7 +22,7 @@ Custom API for google analytics using POST & Measurement Protocol.
       </tr>
       <tr>
       <td colspan="2">
-            <strong><a href="https://github.com/arjankuijpers/cocoonJS-Google-analytics/">CustomAnalytics</a></strong>: an easy to use Google analytics library for CocoonJS.
+            <strong><a href="https://github.com/arjankuijpers/custom-Google-analytics/">CustomAnalytics</a></strong>: an easy to use Google analytics library for CocoonJS.
       </td>
       </tr>
 </table>
@@ -50,7 +52,7 @@ Custom API for google analytics using POST & Measurement Protocol.
 3. be happy!.
 
 
-CustomAnalytics is easy to use. But just in case you need it, (disable your adblocker)[API documentation](https://arjankuijpers.github.io/cocoonJS-Google-analytics/docs/api/index.html).
+CustomAnalytics is easy to use. But just in case you need it, (disable your adblocker)[API documentation](https://arjankuijpers.github.io/custom-Google-analytics/docs/api/index.html).
 
 ## Tips
 
@@ -59,11 +61,11 @@ CustomAnalytics is easy to use. But just in case you need it, (disable your adbl
 
 ## About CocoonJS/Custom Google Analytics
 
-This library is specifically created because CocoonJS has a problem with the standard Google Analytics snipped, and There was a need for Google Analytics on CocoonJS.
+This library is specifically created because CocoonJS has a problem with the standard Google Analytics snipped, and there was a need for Google Analytics on CocoonJS.
 
 Feel free to contribute, create forks and pull requests.
-But give the original Author(s) credit.
+Give the original Author(s) credit.
 
 ## License
 
-[MIT](https://raw.githubusercontent.com/arjankuijpers/cocoonJS-Google-analytics/master/LICENSE).
+[MIT](https://raw.githubusercontent.com/arjankuijpers/custom-Google-analytics/master/LICENSE).
